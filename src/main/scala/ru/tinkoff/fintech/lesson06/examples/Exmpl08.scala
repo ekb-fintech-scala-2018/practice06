@@ -23,7 +23,7 @@ object Exmpl08 {
 
     def sum[T](list: List[T])(implicit integral: Integral[T]): T = {
       import integral._   // импорт implicit преобразований
-      list.foldLeft(integral.zero)( _ + _)
+      list.foldLeft(zero)( _ + _)
     }
 
     def sumDesugared[T](list: List[T])(implicit integral: Integral[T]): T = {

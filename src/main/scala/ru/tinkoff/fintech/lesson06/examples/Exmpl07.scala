@@ -10,7 +10,7 @@ object Exmpl07 {
     implicit def impInt = 42
     def dble = 1.0
 
-    //err//Funcy.tostr("hello", 2.0) // не найден implicit для double
+//    Funcy.tostr("hello", 2.0) // не найден implicit для double
   }
 
 

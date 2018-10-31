@@ -10,7 +10,7 @@ object Exmpl18 {
     implicit def bar2[T: Bar]: Foo[T] = new Foo[T] {}
     implicit def foo[T: Foo](x: T) = x
 
-    //err//foo[Int](42) // ambiguous implicit values bar bar2
+//    foo[Int](42) // ambiguous implicit values bar bar2
   }
   object strange {
     trait Foo[T]
@@ -21,6 +21,6 @@ object Exmpl18 {
     implicit def bar[T: Bar]: Foo[T] = new Foo[T] {}
     implicit def foo[T: Foo](x: T) = x
 
-    //err//foo[Int](42) // ошибка could not find implicit Foo[Int], хотя на самом деле проблема в ambiguity Bar[T]
+//    foo[Int](42) // ошибка could not find implicit Foo[Int], хотя на самом деле проблема в ambiguity Bar[T]
   }
 }

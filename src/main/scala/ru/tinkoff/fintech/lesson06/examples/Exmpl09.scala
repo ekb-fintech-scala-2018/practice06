@@ -25,5 +25,5 @@ object Exmpl09 extends App {
     ops: Integral[U]): U =
     xs(x).foldLeft(ops.zero) {(acc, x) => ops.plus(acc, x)}
 
-  sum("42")
+  println(sum("42"))
 }

@@ -8,5 +8,5 @@ object Exmpl19 {
   implicit def bar[T: Bar]: Foo[T] = new Foo[T] {}
   implicit def foo[T: Foo](x: T) = x
 
-//  foo[Int](42) // diverging implicit expansion
+  foo[Int](42) // diverging implicit expansion
 }

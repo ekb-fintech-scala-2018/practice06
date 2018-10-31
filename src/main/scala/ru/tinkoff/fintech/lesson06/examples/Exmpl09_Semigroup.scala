@@ -6,7 +6,7 @@ object Exmpl09_Semigroup {
   }
 
   object Semigroup {
-    implicit def intInstance[In]: Semigroup[Int] = new Semigroup[Int] {
+    implicit def intInstance: Semigroup[Int] = new Semigroup[Int] {
       def ap(t1: Int, t2: Int): Int = t1 + t2
     }
 

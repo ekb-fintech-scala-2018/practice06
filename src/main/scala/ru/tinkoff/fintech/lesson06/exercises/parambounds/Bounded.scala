@@ -9,6 +9,8 @@ object Bounded {
   //hint - используйте implicit conversion
 
   type BoundedArg = String // должны придумать сами этот тип и обвязку к нему
-  def boundedArgsFunc(args: BoundedArg*) = ??? // тело реализовывать не надо,
-                                               // хотя попробуйте прикинуть, как работать с аргументами
+  def boundedArgsFunc(args: BoundedArg*) = ???
+  // тело реализовывать не надо,
+  // хотя попробуйте прикинуть, как работать с аргументами
+
 }

@@ -4,8 +4,24 @@ trait Show[T] {
   def show: String
 }
 
-object ShowSyntax
-trait ShowInstances
+object ShowSyntax {
+/*
+  implicit class ShowOps(???) {
+    def show: String: ???
+  }
+*/
+}
+
+trait ShowInstances {
+/*
+  implicit val stringShow = new Show[String] {
+    ???
+  }
+
+  etc
+*/
+}
+
 object Show
 
 object Test {

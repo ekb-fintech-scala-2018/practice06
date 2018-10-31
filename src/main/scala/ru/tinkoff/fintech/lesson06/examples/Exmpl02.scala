@@ -4,8 +4,7 @@ import scala.language.implicitConversions
 
 object Exmpl02 extends App {
   implicit def str2Int(s: String) = {
-    s.toInt //- не работает, почему?
-//    Integer.parseInt(s)
+    Integer.parseInt(s)
   }
 
   3 / "3": Int          // arguments conversion: 3 / str2Int("3")

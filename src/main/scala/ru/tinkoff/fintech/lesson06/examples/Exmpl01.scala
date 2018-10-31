@@ -1,6 +1,6 @@
 package ru.tinkoff.fintech.lesson06.examples
 
-  object Exmpl01 {
+object Exmpl01 {
   println(1 to 42)
   1 to 42
   Predef.intWrapper(1).to(42)
